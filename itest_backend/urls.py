@@ -41,7 +41,7 @@ urlpatterns = [
     path('backend/logout/', user_views.user_logout),
     path('backend/user/', user_views.get_user_info),
 
-    path('backend/project/<int:project_id>/',ProjectView.as_view()),
+    path('backend/project/<int:project_id>/', ProjectView.as_view()),
     path('backend/projects/', ProjectsView.as_view()),
     
     path('backend/service/<int:service_id>/', ServiceView.as_view()),
